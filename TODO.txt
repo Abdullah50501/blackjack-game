@@ -1,0 +1,2 @@
+1. fix the statistic calculation 'round profit and P/R'.
+2. make a leader bord of the game.
