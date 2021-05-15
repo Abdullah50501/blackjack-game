@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a29d53b-8aa4-48e6-9894-4d6c4c5a3e46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leaderbord.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blackJack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blackJack.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJack.py" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +41,21 @@
       <option name="presentableId" value="Default" />
       <updated>1620102039626</updated>
     </task>
+    <task id="LOCAL-00001" summary="1. fixed statistics calculation.&#10;2. added a leader bored file">
+      <created>1621114904167</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621114904167</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1. fixed statistics calculation.&#10;2. added a leader bored file">
+      <created>1621115028932</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621115028932</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -59,15 +71,23 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1. fixed statistics calculation.&#10;2. added a leader bored file" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. fixed statistics calculation.&#10;2. added a leader bored file" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#Inspections" timestamp="1621113527726">
+    <state x="361" y="71" key="#Inspections" timestamp="1621115201095">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1621113527726" />
+    <state x="361" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1621115201095" />
     <state x="525" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620184116918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="525" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1620184116918" />
+    <state x="411" y="0" key="CommitChangelistDialog2" timestamp="1621115028204">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="411" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1621115028204" />
     <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1620183699229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -80,6 +100,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1621113474128" />
+    <state x="361" y="134" key="Vcs.Push.Dialog.v2" timestamp="1621114915516">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="134" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1621114915516" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1620194205688">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
