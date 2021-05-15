@@ -1,0 +1,6 @@
+name,money,profit,loses,num_rounds,pperr,lperr
+Abdullah,1300,300,0,1,300.0,0.0
+Ahmed,2000,1000,0,2,500.0,0.0
+Naman,0.0,14800.0,15800,5,2960.0,3160.0
+sdfdsg,1344,344,0,1,344.0,0.0
+fff,1000,0,0,1,0.0,0.0

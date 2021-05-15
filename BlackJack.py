@@ -11,6 +11,7 @@ def show_table(sd=True):
     p1.phand()
 
 
+
 # Setting of the game
 number_of_decks = 7
 percentage_to_reshuffle = 0.3
@@ -29,22 +30,26 @@ while table_creating:
         p1 = Player(input('What is your name?  '), player_money)
         table_creating = False
     except:
-        print('Input must be a positive hole number')
+        print('Invalid Name')
 
 # Start the Game
 gameStatus = True
 num_rounds = 0
+profit = 0
+loses = 0
 while gameStatus:
     # clear terminal and welcome player and count round
     profit = p1.money - player_money
     if num_rounds == 0:
         pperr = 0
+        lperr = 0
     else:
         pperr = profit/num_rounds
+        lperr = loses/num_rounds
     num_rounds += 1
     os.system('cls')
     print('Let\' play ....')
-    print(p1.name, '\t\tMoney balance = ', p1.money,'\t Profit: ', profit, '\t Round: ', num_rounds, '\t P/R: ', pperr)
+    print(p1.name, '\t\tMoney balance = ', p1.money,'\t Profit:', profit, '\t Loses:', loses, '\t Round:', num_rounds, '\t P/R:', pperr, '\t L/R:', lperr)
     print('')
 
     # This loop take the bet from player
@@ -100,16 +105,20 @@ while gameStatus:
     if blackjack:
         print('WOW BLACKJACK, you WIN .... :)')
         p1.money += (bet * 2.5)
+        profit += (bet * 1.5)
     elif p1.score() > 21:
         print('you busted good luck next time :(')
+        loses =+ bet
     elif p1.score() == dd.score():
         print('Draw .....')
         p1.money += bet
     elif p1.score() > dd.score() or dd.score() > 21:
         print('you win .... :)')
         p1.money += (2 * bet)
+        profit += bet
     elif p1.score() < dd.score():
         print('you lose ... :(')
+        loses += bet
     else:
         print('ERORR .. please contact devolper ...')
 
@@ -118,10 +127,14 @@ while gameStatus:
     if p1.money < 1 or input('q for Quit, any key to play again') == 'q':
         gameStatus = False
         os.system('cls')
+        pperr = profit/num_rounds
+        lperr = loses/num_rounds
         print('Good Game see you again....')
-        print(p1.name, '\t\tMoney balance = ', p1.money, '\t Profit: ', profit, '\t Round: ', num_rounds, '\t P/R: ',
-              pperr)
+        print(p1.name, '\t\tMoney balance = ', p1.money, '\t Profit:', profit, '\t Loses:', loses, '\t Round:', num_rounds, '\t P/R:', pperr, '\t L/R:', lperr)
         print('')
+        result = str(p1.name) + ',' + str(p1.money) + ',' + str(profit) + ',' + str(loses) + ',' + str(num_rounds) + ',' + str(pperr) + ',' + str(lperr) + '\n'
+        with open('leaderbord.txt', 'a') as f:
+            f.write(result)
     p1.addcards(clean=True)
     dd.addcards(clean=True)
     if deck.lenremainingcard() < percentage_to_reshuffle:
